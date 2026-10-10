@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">The Oxygen English classroom</title>
+  <desc id="desc">A quiet, sunlit classroom with warm oak desks, tall windows, plants, books and a sage green Oxygen English teaching board.</desc>
+  <defs>
+    <linearGradient id="windowLight" x1="0" y1="0" x2="0.85" y2="1">
+      <stop stop-color="#EAF0EC"/><stop offset="1" stop-color="#F9F8F0"/>
+    </linearGradient>
+    <linearGradient id="sunlight" x1="0" y1="0" x2="1" y2="0.6">
+      <stop stop-color="#FFFDF5" stop-opacity="0.8"/><stop offset="1" stop-color="#FFFDF5" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="oak" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#D9C29E"/><stop offset="1" stop-color="#C4AB83"/>
+    </linearGradient>
+    <filter id="softShadow" x="-40%" y="-70%" width="180%" height="240%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <clipPath id="floorClip"><path d="M164 452 622 326 1072 514 614 640Z"/></clipPath>
+    <clipPath id="windowClip"><path d="M210 193 562 96 562 305 210 402Z"/></clipPath>
+    <g id="desk">
+      <ellipse cx="-5" cy="96" rx="102" ry="18" fill="#665E4E" opacity="0.13" filter="url(#softShadow)"/>
+      <path d="M-89-5V57M-25-22V40M90 22V84M26 39V101" fill="none" stroke="#424941" stroke-width="5.5" stroke-linecap="round"/>
+      <path d="M-89 30 26 78M26 78 90 61" fill="none" stroke="#424941" stroke-width="3.5"/>
+      <path d="M-104-12-27-34 104 21 27 43Z" fill="url(#oak)"/>
+      <path d="M-104-12V-5L27 50V43Z" fill="#AF916C"/>
+      <path d="M27 43 104 21V28L27 50Z" fill="#BA9C75"/>
+      <path d="M-82-14 29 33M-61-20 51 27M-38-26 73 21" fill="none" stroke="#AB8F6A" opacity="0.23" stroke-width="1"/>
+      <g transform="translate(-43 5)">
+        <path d="M0 0 24-7 58 7 33 14Z" fill="#F4F1E7"/>
+        <path d="M0 0V4L33 18V14Z" fill="#D1CFBD"/>
+        <path d="M33 14 58 7V11L33 18Z" fill="#E4E0D3"/>
+        <path d="M-2-4 23-11 58 3 33 11Z" fill="#82988B"/>
+        <path d="M0-3 32 10" stroke="#BDD0C0" stroke-width="1.5"/>
+      </g>
+      <path d="m48 6 14-4" stroke="#675C4B" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+    <g id="chair">
+      <ellipse cx="0" cy="35" rx="44" ry="9" fill="#665E4E" opacity="0.12" filter="url(#softShadow)"/>
+      <path d="M-31-3V34M1-14V23M33 4V42M1 14V53" fill="none" stroke="#424941" stroke-width="4" stroke-linecap="round"/>
+      <path d="M-34-5 5-16 41-1 1 10Z" fill="#B9C6B5"/>
+      <path d="M-34-5V0L1 15V10Z" fill="#91A68F"/>
+      <path d="M1 10 41-1V4L1 15Z" fill="#A3B69D"/>
+      <path d="M-29-6V-42M7 9V-27" fill="none" stroke="#424941" stroke-width="3"/>
+      <path d="M-35-49Q-35-56-29-53L7-38Q13-36 13-29V-13Q13-9 8-11L-30-27Q-35-29-35-34Z" fill="#A5B69F"/>
+      <path d="M-34-47 11-28" fill="none" stroke="#C6D1BE" stroke-width="1.5"/>
+    </g>
+    <g id="plant">
+      <ellipse cx="0" cy="9" rx="37" ry="10" fill="#5D6559" opacity="0.12" filter="url(#softShadow)"/>
+      <path d="M-25-34-20 4Q0 20 20 4L25-34Z" fill="#C9C3AF"/>
+      <ellipse cy="-34" rx="25" ry="8" fill="#D6D1C1"/>
+      <ellipse cy="-35" rx="19" ry="5" fill="#766D5B"/>
+      <path d="M0-33V-138M0-57-28-102M0-78 32-118M0-91-18-145M0-113 20-153" fill="none" stroke="#687F6A" stroke-width="2.5"/>
+      <path d="M-27-101Q-57-105-49-131-22-133-27-101Z" fill="#829A80"/>
+      <path d="M31-117Q27-149 55-151 68-123 31-117Z" fill="#8FA589"/>
+      <path d="M-17-143Q-41-158-26-179 0-171-17-143Z" fill="#94A98C"/>
+      <path d="M20-152Q17-184 42-185 54-161 20-152Z" fill="#7D947B"/>
+      <path d="M0-132Q-15-151 0-166 20-146 0-132Z" fill="#A6B69C"/>
+      <path d="M0-61Q16-92 36-81 33-54 0-61Z" fill="#98AA8C"/>
+      <path d="M-2-77Q-30-68-34-89-16-106-2-77Z" fill="#748D75"/>
+    </g>
+  </defs>
+
+  <rect width="1200" height="700" fill="#F7F5F0"/>
+  <ellipse cx="618" cy="609" rx="407" ry="41" fill="#746E5F" opacity="0.1" filter="url(#softShadow)"/>
+
+  <!-- Open architecture, viewed at a quiet three-quarter angle. -->
+  <path d="M164 452 622 326 1072 514 614 640Z" fill="#E4D9C5"/>
+  <g clip-path="url(#floorClip)" fill="none" stroke="#BAAE98" stroke-width="1" opacity="0.5">
+    <path d="M106 424 674 661M164 408 732 645M222 392 790 629M280 376 848 613M338 360 906 597M396 344 964 581M454 328 1022 565M512 312 1080 549M570 296 1138 533"/>
+    <path d="m330 472 49-14m98 91 49-14m82 58 49-14m-42-191 49-14m67 59 49-14m-283-11 49-14m-109 115 49-14m355-46 49-14m-260-88 49-14m91 148 49-14m-187-37 49-14"/>
+  </g>
+  <path d="M164 452V463L614 651V640Z" fill="#CFC0A5"/>
+  <path d="M614 640V651L1072 525V514Z" fill="#D9CFBC"/>
+  <path d="M164 176 622 50V326L164 452Z" fill="#E9E7DF"/>
+  <path d="M622 50 1072 238V514L622 326Z" fill="#F2EFE6"/>
+  <path d="M164 441 622 315 1072 503V514L622 326 164 452Z" fill="#D9D7CC"/>
+  <path d="M622 52V315" stroke="#D8D7CB" stroke-width="1.5"/>
+  <path d="M164 176 622 50 1072 238" fill="none" stroke="#FCFAF4" stroke-width="7" stroke-linejoin="round"/>
+
+  <!-- Tall, finely framed windows and their soft daylight. -->
+  <path d="M199 186 573 83V313L199 416Z" fill="#C9C6B8"/>
+  <path d="M205 191 567 91V309L205 409Z" fill="#F7F6EC"/>
+  <path d="M210 193 562 96V305L210 402Z" fill="url(#windowLight)"/>
+  <g clip-path="url(#windowClip)">
+    <path d="M182 369Q255 331 312 346T453 310T609 293V429H182Z" fill="#CFDBCD" opacity="0.56"/>
+    <path d="M187 401Q266 357 338 363T496 332T597 324V433H187Z" fill="#BBCBBA" opacity="0.44"/>
+    <path d="M304 332V273M470 288V227" stroke="#B3C1AD" stroke-width="3" opacity="0.5"/>
+    <path d="M280 293Q280 256 305 250 336 250 335 278 339 307 304 312Z" fill="#C4D1BC" opacity="0.7"/>
+    <path d="M446 256Q443 220 470 213 499 217 497 243 500 271 471 273Z" fill="#BDCCB7" opacity="0.65"/>
+  </g>
+  <path d="M326 161V370M444 129V338M210 298 562 201" stroke="#F8F7EE" stroke-width="7"/>
+  <path d="M210 402 562 305 570 309 209 409 199 405Z" fill="#FBF9F0"/>
+  <g clip-path="url(#floorClip)">
+    <path d="M217 399 563 304 834 452 489 547Z" fill="url(#sunlight)"/>
+    <path d="m338 365 261 147m-145-179 261 147" stroke="#A9A798" opacity="0.07" stroke-width="7"/>
+  </g>
+
+  <!-- A framed teaching board, kept intentionally spare. -->
+  <g transform="matrix(1 .418 0 1 660 108)">
+    <rect x="2" y="5" width="323" height="158" rx="3" fill="#9A9582" opacity="0.13"/>
+    <rect width="323" height="158" rx="2" fill="#C8B18E"/>
+    <rect x="6" y="6" width="311" height="146" rx="1" fill="#879F91"/>
+    <text x="161.5" y="52" text-anchor="middle" fill="#F8F7F0" font-family="Georgia, 'Times New Roman', serif" font-size="25" letter-spacing="0.2">Oxygen English</text>
+    <path d="M134 67H189" stroke="#D5E0D4" stroke-width="1"/>
+    <text x="161.5" y="92" text-anchor="middle" fill="#EFF3EC" font-family="Arial, Helvetica, sans-serif" font-size="10.5" letter-spacing="0.2">A little English. A bigger world.</text>
+    <text x="161.5" y="121" text-anchor="middle" fill="#DDE8DC" font-family="Arial, Helvetica, sans-serif" font-size="8.5" letter-spacing="2">A PLACE TO BEGIN</text>
+    <path d="M-3 157H326V163H-3Z" fill="#BA9F7A"/>
+    <rect x="249" y="153" width="25" height="4" rx="1" fill="#F2EEDF"/>
+    <rect x="284" y="152" width="16" height="5" rx="1" fill="#626D63"/>
+  </g>
+
+  <!-- Small details: a wall clock, a reading shelf, and living plants. -->
+  <g transform="matrix(1 .418 0 1 1016 282)">
+    <circle r="20" fill="#D9D3C5"/>
+    <circle r="18" fill="#F9F7F0"/>
+    <path d="M0-11V0L7 3" fill="none" stroke="#727C70" stroke-width="1.5" stroke-linecap="round"/>
+    <circle r="1.5" fill="#727C70"/>
+  </g>
+  <g transform="translate(908 445)">
+    <ellipse cx="34" cy="47" rx="66" ry="11" fill="#706957" opacity="0.12" filter="url(#softShadow)"/>
+    <path d="M-28-18 11-29 99 8 60 19Z" fill="#D3BC96"/>
+    <path d="M-28-18V30L60 67V19Z" fill="#C1A985"/>
+    <path d="M60 19 99 8V56L60 67Z" fill="#B49A75"/>
+    <path d="M-21-8V24L53 55V23Z" fill="#847C65"/>
+    <path d="M-19-7V23L-9 27V-3Z" fill="#DCD4C2"/>
+    <path d="M-8-2V27L3 32V2Z" fill="#929E8D"/>
+    <path d="M5 3V32L14 36V7Z" fill="#B5A488"/>
+    <path d="M16 7V37L27 41V11Z" fill="#E9E3D5"/>
+    <path d="M28 13V42L37 46V17Z" fill="#789386"/>
+    <path d="M39 18V47L49 51V22Z" fill="#D2B38B"/>
+    <path d="m-17-3 5 2m8 5 4 2m23 8 4 2m24 8 4 2" stroke="#EAE6DA" stroke-width="1.2"/>
+  </g>
+  <use href="#plant" transform="translate(223 434) scale(.8)"/>
+  <use href="#plant" transform="translate(1029 509) scale(.73)"/>
+
+  <!-- Four orderly workspaces, drawn in depth order. -->
+  <use href="#desk" transform="translate(581 341) scale(.85)"/>
+  <use href="#chair" transform="translate(520 410) scale(.85)"/>
+  <use href="#desk" transform="translate(427 389) scale(.85)"/>
+  <use href="#chair" transform="translate(366 458) scale(.85)"/>
+  <use href="#desk" transform="translate(738 407) scale(.85)"/>
+  <use href="#chair" transform="translate(677 476) scale(.85)"/>
+  <use href="#desk" transform="translate(584 455) scale(.85)"/>
+  <use href="#chair" transform="translate(523 524) scale(.85)"/>
+
+  <path d="M164 452 614 640 1072 514" fill="none" stroke="#EAE3D5" stroke-width="1"/>
+</svg>

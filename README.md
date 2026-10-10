@@ -1,30 +1,76 @@
-# Oxygen 英语课堂
+# Oxygen English
 
-简洁的 Oxygen 中文课堂网站：奶油白背景、柔和的薰衣草紫与清晰课程卡片，配有小巧的 WebGL 互动氧分子，以及 Turgun 的教师介绍（瑞典皇家理工学院硕士在读，8 年教学经验）。
+A calm, frontend-only English teaching website in warm ivory (`#F7F5F0`), charcoal (`#242824`), and muted sage (`#8FA99B`). Built with the repository’s existing HTML/CSS/JavaScript structure and a locally vendored Three.js classroom.
 
-## 本地运行
+## Run and preview
 
-在项目目录执行：
+Use Node.js 20 or later, then run these commands from the repository directory:
 
 ```sh
-python3 -m http.server 8000
+npm ci
+npm start
 ```
 
-在运行服务器的同一台电脑上打开 `http://localhost:8000`。iPad 请使用已发布的 HTTPS 网站：
+Open `http://localhost:3000` in a browser **on the computer running the server**. There is no compilation or production build step: the browser loads the static files directly. `npm start` itself does not require the test dependencies to be installed.
+
+An alternative, if you already have Python, is:
+
+```sh
+python3 -m http.server 3000
+```
+
+For an iPad on the same Wi-Fi network as your computer, run:
+
+```sh
+npm start -- --host 0.0.0.0
+```
+
+Then open `http://YOUR-COMPUTER-LAN-IP:3000` on the iPad, substituting your computer’s local network address. `localhost` on an iPad refers to the iPad itself. A server running inside the Codex cloud workspace requires a supported forwarded port or a published website to reach it from your iPad.
+
+This repository’s existing GitHub Pages address is:
 
 https://tue3497-alt.github.io/My-first-project/
 
-## 功能
+GitHub Pages publishes static files from `main` at `/ (root)`. `.nojekyll` is retained. All runtime asset paths are relative, so the site works under a GitHub Pages project subdirectory.
 
-- 四个中文课程方向，支持类别筛选及中文、英文关键词搜索。
-- 课程详情弹窗，包含课程内容、适合人群与键盘可操作的标签页。
-- 一分钟英语练习，包含答案反馈、中文解析及浏览器英文朗读。朗读依赖设备语音支持。
-- 本地原生 WebGL 三维模型：鼠标互动、手指横向拖动、方向键旋转、暂停及重置。允许纵向滑动页面。
-- 支持减少动态效果偏好；WebGL 不可用时显示静态视觉，课程功能保持可用。
-- 手机、iPad 和桌面自适应布局，无外部字体、模型或 JavaScript 依赖。
+## Explore the classroom
 
-`app.js` 管理课程及练习，`scene.js` / `scene.css` 管理三维场景，`styles.css` 管理页面设计。报名方式与课程安排尚未公布，网站不提交或保存学生个人信息。
+- **Board:** a short introduction lesson, with a practice question and feedback.
+- **Book:** five vocabulary flashcards. Reveal meanings, move between words, and start again.
+- **Desk:** three English questions with explanations, a score out of three, and restart.
 
-## 发布
+Click the objects or their labels in the 3D room, or use the three HTML activity buttons directly beneath it. Modals have a close button, support Escape, and return focus to the opener. The quiz has native radio controls and the flashcards support arrow keys.
 
-GitHub Pages 使用 `main` 分支的 `/ (root)`。推送更新后，由 GitHub 自动发布。`.nojekyll` 指示直接发布静态文件；资产 URL 的版本参数用于避免继续使用旧版样式和脚本缓存。
+Drag horizontally to gently look around. Touch controls leave vertical page scrolling available. Arrow keys and Reset view provide alternative camera controls. Mouse-wheel scrolling stays with the page.
+
+The course descriptions are explicitly marked as **sample outlines**. Teacher information uses the supplied facts: Turgun, eight years of teaching experience, and currently a master’s student at KTH Royal Institute of Technology. There are no invented prices, testimonials, grades, or learning results. No login, payment, storage, or backend service is included.
+
+## Validation
+
+```sh
+npm run check
+npm test
+npx playwright install chromium
+npm run test:browser
+```
+
+`check` validates JavaScript syntax; `test` runs the six Node state tests for quiz scoring, duplicate submissions, restart, and flashcard navigation. Playwright covers responsive layouts, activities, keyboard/focus handling, real mesh clicks, camera and scrolling controls, WebGL fallback, reduced motion, and a GitHub Pages subdirectory.
+
+To use an existing Chromium installation instead of downloading Playwright’s browser:
+
+```sh
+PLAYWRIGHT_CHROMIUM_EXECUTABLE=/usr/bin/chromium npm run test:browser
+```
+
+The cloud environment has Chromium at that path. Browser checks use software rendering in Chromium. Physical iPad Safari and device GPU performance have not been verified.
+
+## Files and performance
+
+- `index.html`, `styles.css`, `app.js`: the site and native section navigation.
+- `scene.js`: procedural room, camera controls, raycasting, and fallback handling.
+- `activities.js`, `learning.js`: accessible activities and immutable quiz/flashcard models.
+- `classroom-fallback.svg`: the local classroom illustration when 3D is unavailable.
+- `vendor/three/`: unmodified Three.js 0.180.0 ESM files, MIT license, and provenance/integrity notes.
+- `tests/`: state and browser tests; `scripts/serve.mjs`: development file server.
+
+Three.js is loaded only when the classroom approaches the viewport. The room uses procedural geometry and textures, shared materials, instanced furniture parts, capped pixel ratio, and demand-based rendering. There is no continuous animation loop, so reduced-motion preferences and offscreen operation do not require background animation. If WebGL2 is unavailable or rendering fails, the static classroom illustration and all HTML activities remain usable. No external fonts, models, CDN requests, or paid assets are required at runtime.
