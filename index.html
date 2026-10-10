@@ -1,13 +1,58 @@
 <!doctype html>
-<html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#421064"><title>Oxygen English · A little English, every day</title><link rel="stylesheet" href="styles.css"></head>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#32104f">
+  <meta name="description" content="Oxygen 英语课堂，由皇家理工学院硕士在读、拥有 8 年教学经验的 Turgun 主讲。探索新概念英语、考研英语与雅思阅读。">
+  <title>Oxygen 英语课堂 · 和 Turgun 一起，打开新可能</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="scene.css?v=2">
+  <script src="scene.js?v=2" defer></script>
+  <script src="app.js?v=2" defer></script>
+</head>
 <body>
-<header class="header"><a class="brand" href="#"><span class="brand-symbol">♛</span><span>Oxygen<span class="brand-sub">ENGLISH CLASSROOM</span></span></a><nav aria-label="Main navigation"><a class="active" href="#courses">Our courses</a><a href="#approach">Our approach</a><a href="#classroom">The classroom</a></nav><button class="button small" data-contact>Let’s talk <span>↗</span></button></header>
-<main>
-<section class="hero"><div class="hero-copy"><div class="eyebrow"><span class="dot"></span> YOUR NEXT CHAPTER STARTS HERE</div><h1>A little English.<br>A world of <em>possibility.</em></h1><p>A welcoming space to find your voice. Build confidence, explore new ideas, and make English part of your everyday life.</p><a class="button" href="#courses">Find your course <span>↗</span></a><div class="hero-note"><span class="mini-stars">✦ ✦ ✦</span> Small steps. Real progress. Your pace.</div></div><div class="hero-art" aria-label="Oxygen English classroom illustration"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-star star-one">✦</div><div class="art-star star-two">✧</div><div class="art-brand"><div class="crown">♛</div><div class="oxygen">Oxygen</div><div class="chinese">英语课堂</div><div class="art-english">ENGLISH CLASSROOM</div></div><span class="art-tag">BREATHE IN CONFIDENCE.</span><div class="floating-note">Hello, possibilities. <span>✦</span></div></div></section>
-<section class="intro-strip" id="approach"><span>English for your <i>real life.</i></span><div>◎ <span>Clear, guided lessons</span></div><div>✧ <span>Learning that fits you</span></div><div>↗ <span>Confidence that lasts</span></div></section>
-<section class="courses-section" id="courses"><div class="section-heading"><div><div class="eyebrow">MAKE ROOM FOR SOMETHING NEW</div><h2>Find your next step.</h2></div><p>From your first conversation to your next big exam.<br>There’s a place for you here.</p></div><div class="course-toolbar"><div class="filters" role="group" aria-label="Filter courses"><button class="selected" data-filter="all" aria-pressed="true">All courses <span>4</span></button><button data-filter="foundation" aria-pressed="false">Everyday English</button><button data-filter="exam" aria-pressed="false">Exam preparation</button></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Find a course" aria-label="Search courses"></label></div><div class="course-grid" id="course-grid"></div><p class="empty" hidden>No courses found. Try another search or category.</p></section>
-<section class="classroom" id="classroom"><div class="classroom-mark">O<span>✦</span></div><div><div class="eyebrow">A CLASSROOM WITH ROOM FOR YOU</div><h2>More than lessons.<br>A little breathing space.</h2><p>At Oxygen, learning begins with feeling comfortable. Our classroom brings together thoughtful lessons and a love of language — so you can grow, one conversation at a time.</p><button class="text-button" data-contact>Get to know Oxygen <span>↗</span></button></div><div class="classroom-aside"><span>BASED IN SWEDEN<br>CONNECTED THROUGH ENGLISH</span><p>“Every new word is<br>an open door.”</p><span>LET’S OPEN A FEW TOGETHER. ✦</span></div></section>
-</main><footer><a class="brand footer-brand" href="#"><span class="brand-symbol">♛</span>Oxygen</a><span>A little English, every day.</span><span>© <span id="year"></span> Oxygen English</span><a href="#courses">Back to courses ↑</a></footer>
-<dialog id="course-dialog"><button class="close" aria-label="Close dialog">×</button><div id="dialog-content"></div></dialog><script src="app.js"></script>
-</body></html>
+<a class="skip-link" href="#main">跳转到主要内容</a>
+<header class="header">
+  <a class="brand" href="#" aria-label="Oxygen 英语课堂首页"><span class="brand-icon" aria-hidden="true">O<span>₂</span></span><span class="brand-name">Oxygen<span class="brand-sub">英语课堂</span></span></a>
+  <nav aria-label="主导航"><a href="#courses">课程中心</a><a href="#teacher">认识老师</a><a href="#approach">学习方法</a></nav>
+  <button class="button small" data-lesson>体验一小课 <span aria-hidden="true">↗</span></button>
+</header>
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="dot"></span> 从瑞典出发，与你一起成长</div>
+      <h1 id="hero-title">让英语，<br>成为你的<span class="heading-accent">新可能<span class="accent-star" aria-hidden="true">✦</span>。</span></h1>
+      <p class="hero-description">给学习一点氧气，给表达多一点自信。<br>跟随 Turgun，从读懂一句话，到打开一个新世界。</p>
+      <div class="hero-actions"><a class="button" href="#courses">探索我的课程 <span aria-hidden="true">↗</span></a><a class="quiet-link" href="#teacher">认识 Turgun <span aria-hidden="true">→</span></a></div>
+      <div class="teacher-note"><div class="mini-avatar" aria-hidden="true">T</div><div><strong>Turgun · 你的英语老师</strong><span>皇家理工学院硕士在读 · 8 年教学经验</span></div><span class="note-star" aria-hidden="true">✧</span></div>
+    </div>
+    <div class="hero-visual">
+      <div class="scene-top"><span><span class="status-dot"></span> OXYGEN LEARNING SPACE</span><span>3D · 互动</span></div>
+      <div id="scene-stage" tabindex="0" role="group" aria-label="Oxygen 互动三维模型。用左右方向键旋转，或用手指横向拖动。">
+        <canvas id="oxygen-scene" aria-hidden="true"></canvas>
+        <div id="scene-fallback" hidden><div class="fallback-orb"></div><div class="fallback-orb second"></div></div>
+      </div>
+      <div class="scene-wordmark" aria-hidden="true">Oxygen<span>英语课堂</span></div>
+      <div class="scene-sticker"><span aria-hidden="true">✦</span><div>给梦想，一点氧气。<small>A LITTLE ENGLISH. A BIGGER WORLD.</small></div></div>
+      <div class="scene-bottom"><span><span aria-hidden="true">↔</span> 轻触拖动，探索 3D</span><div><button id="scene-reset" aria-label="重置三维视角">↺</button><button id="scene-toggle" aria-label="暂停三维动画" aria-pressed="false">Ⅱ</button></div></div>
+    </div>
+  </section>
+  <section class="trust-strip" aria-label="课堂亮点"><div class="trust-title">每一次进步，<br><strong>都值得被看见。</strong></div><div class="trust-item"><span class="trust-value">8<span>年</span></span><span class="trust-label">教学经验，认真陪伴</span></div><div class="trust-item"><span class="trust-value serif">KTH<span>硕士在读</span></span><span class="trust-label">瑞典皇家理工学院</span></div><div class="trust-item"><span class="trust-value">4<span>大方向</span></span><span class="trust-label">从基础到考试，找到你的起点</span></div></section>
+  <section class="courses-section" id="courses" aria-labelledby="courses-title">
+    <div class="section-heading"><div><div class="eyebrow">YOUR NEXT CHAPTER · 你的下一章</div><h2 id="courses-title">总有一门课，<em>适合现在的你。</em></h2></div><p>不必一下子走很远。<br>从适合自己的第一步开始。</p></div>
+    <div class="course-toolbar"><div class="filters" role="group" aria-label="筛选课程"><button class="selected" data-filter="all" aria-pressed="true">全部课程 <span>04</span></button><button data-filter="foundation" aria-pressed="false">基础提升</button><button data-filter="exam" aria-pressed="false">考试备考</button></div><label class="search"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="找找你想学的课程" aria-label="搜索课程"></label></div>
+    <div class="course-grid" id="course-grid"></div><p class="empty" role="status" hidden>暂时没有找到相关课程，试试其他关键词吧。</p>
+  </section>
+  <section class="teacher-section" id="teacher" aria-labelledby="teacher-title">
+    <div class="teacher-portrait" aria-label="Turgun 老师的字母艺术卡片"><div class="portrait-grid" aria-hidden="true"></div><div class="portrait-top">MEET YOUR TEACHER <span>↗</span></div><div class="portrait-letter" aria-hidden="true">T<span>✦</span></div><div class="portrait-name">Turgun <span>英语主讲老师</span></div><div class="portrait-tag">STOCKHOLM, SWEDEN <span>59.33° N</span></div></div>
+    <div class="teacher-copy"><div class="eyebrow">不仅教英语，更陪你发现可能</div><h2 id="teacher-title">你好，我是 <span class="serif">Turgun</span>。</h2><div class="credential-chips"><span>皇家理工学院（KTH）硕士在读</span><span>8 年教学经验</span></div><p>我目前在瑞典皇家理工学院攻读硕士，拥有 8 年教学经验。Oxygen 英语课堂，是我与你分享英语、交流学习的地方。</p><p>我希望把知识讲得清楚，把学习变得有趣。无论你刚刚起步，还是正在为考试做准备，都可以从这里找到适合自己的方向。</p><blockquote>“让每一次开口，都比上一次更自信。”</blockquote><a class="quiet-link" href="#courses">一起找到你的学习起点 <span aria-hidden="true">↗</span></a></div>
+  </section>
+  <section class="approach-section" id="approach" aria-labelledby="approach-title"><div class="section-heading"><div><div class="eyebrow">BREATHE. LEARN. GROW.</div><h2 id="approach-title">学习，可以有自己的节奏。</h2></div><button class="text-button" data-lesson>先来体验一分钟 <span aria-hidden="true">↗</span></button></div><div class="approach-grid"><article><span class="step-number">01</span><div class="step-icon" aria-hidden="true">◎</div><h3>先理解，再记忆</h3><p>把复杂的知识拆成清楚的小步骤，让词汇和语法有来处、有联系。</p></article><article><span class="step-number">02</span><div class="step-icon" aria-hidden="true">✧</div><h3>在语境中学英语</h3><p>从一句话、一篇短文出发，把所学放进真实表达，学会灵活运用。</p></article><article><span class="step-number">03</span><div class="step-icon" aria-hidden="true">↗</div><h3>给进步一点时间</h3><p>找到适合你的方向，通过持续练习，慢慢积累看得见的自信。</p></article></div></section>
+  <section class="closing-banner"><div class="closing-symbol" aria-hidden="true">✦</div><div><span class="eyebrow">从今天的一小步开始</span><h2>准备好，为英语注入新氧气了吗？</h2></div><button class="button light" data-lesson>体验一小课 <span aria-hidden="true">↗</span></button></section>
+</main>
+<footer><a class="brand" href="#"><span class="brand-icon" aria-hidden="true">O<span>₂</span></span><span class="brand-name">Oxygen<span class="brand-sub">英语课堂</span></span></a><span>给学习一点氧气，给未来多一点可能。</span><div><span>© <span id="year"></span> Oxygen 英语课堂</span><a href="#">回到顶部 ↑</a></div></footer>
+<dialog id="course-dialog" aria-labelledby="dialog-title"><button class="close" aria-label="关闭弹窗">×</button><div id="dialog-content"></div></dialog>
+</body>
+</html>

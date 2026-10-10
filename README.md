@@ -1,15 +1,30 @@
-# Oxygen English classroom
+# Oxygen 英语课堂
 
-A responsive classroom website inspired by Oxygen’s purple-and-gold branding. Includes course categories, live search, course details, and mobile layouts.
+Oxygen 中文课堂网站：紫金色视觉、原生 WebGL 互动氧分子、立体课程书籍，以及 Turgun 的教师介绍（瑞典皇家理工学院硕士在读，8 年教学经验）。
 
-## Run locally
+## 本地运行
 
-From this directory:
+在项目目录执行：
 
 ```sh
 python3 -m http.server 8000
 ```
 
-Open `http://localhost:8000` in your browser. The site uses plain HTML, CSS, and JavaScript; no build or dependency installation is required. Google Fonts are optional; system fonts provide a fallback.
+在运行服务器的同一台电脑上打开 `http://localhost:8000`。iPad 请使用已发布的 HTTPS 网站：
 
-Course content is defined in `app.js`. Enrolment is a placeholder pending real contact or registration details. The site does not collect or submit personal information.
+https://tue3497-alt.github.io/My-first-project/
+
+## 功能
+
+- 四个中文课程方向，支持类别筛选及中文、英文关键词搜索。
+- 课程详情弹窗，包含课程内容、适合人群与键盘可操作的标签页。
+- 一分钟英语练习，包含答案反馈、中文解析及浏览器英文朗读。朗读依赖设备语音支持。
+- 本地原生 WebGL 三维模型：鼠标互动、手指横向拖动、方向键旋转、暂停及重置。允许纵向滑动页面。
+- 支持减少动态效果偏好；WebGL 不可用时显示静态视觉，课程功能保持可用。
+- 手机、iPad 和桌面自适应布局，无外部字体、模型或 JavaScript 依赖。
+
+`app.js` 管理课程及练习，`scene.js` / `scene.css` 管理三维场景，`styles.css` 管理页面设计。报名方式与课程安排尚未公布，网站不提交或保存学生个人信息。
+
+## 发布
+
+GitHub Pages 使用 `main` 分支的 `/ (root)`。推送更新后，由 GitHub 自动发布。`.nojekyll` 指示直接发布静态文件；资产 URL 的版本参数用于避免继续使用旧版样式和脚本缓存。

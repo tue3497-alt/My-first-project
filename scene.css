@@ -1,0 +1,56 @@
+/* Styles scoped to the interactive molecule; the page owns hero layout. */
+#scene-stage {
+  position: relative;
+  isolation: isolate;
+  touch-action: pan-y;
+  cursor: grab;
+  -webkit-tap-highlight-color: transparent;
+}
+#scene-stage:focus-visible {
+  outline: 2px solid #e3bc75;
+  outline-offset: 8px;
+  border-radius: 30px;
+}
+#scene-stage.is-dragging { cursor: grabbing; }
+#scene-stage::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 10% 5%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at 40% 48%, #ae74381c, transparent 60%),
+    radial-gradient(ellipse at 70% 55%, #8831cf20, transparent 65%);
+  filter: blur(24px);
+  pointer-events: none;
+}
+#oxygen-scene {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+#oxygen-scene[hidden], #scene-fallback[hidden] { display: none; }
+#scene-fallback {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #e7c895;
+  font-size: clamp(70px, 13vw, 130px);
+  font-weight: 600;
+  letter-spacing: -0.07em;
+  text-shadow: 0 8px 40px #b96cf653;
+}
+#scene-fallback::before {
+  content: "";
+  position: absolute;
+  inset: 18% 7%;
+  border: 1px solid #deb4777d;
+  border-radius: 50%;
+  transform: rotate(-24deg);
+}
+.scene-unavailable { cursor: default !important; }
+#scene-toggle:disabled, #scene-reset:disabled { opacity: 0.45; cursor: default; }
